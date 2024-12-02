@@ -67,6 +67,7 @@ local function is_safe_line(line)
     return false
 end
 
+-- first exercise is here
 --
 -- local function is_safe_line(line)
 --     if #line < 2 then
