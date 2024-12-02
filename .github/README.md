@@ -9,6 +9,13 @@
   One day = One language
 </p>
 
+## Advent of Code
+
+| Project | Language | Link                                                                      |
+| ------- | -------- | ------------------------------------------------------------------------- |
+| Day01   | Python3  | [Day01](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day01) |
+| Day02   | Lua      | [Day02](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day02) |
+
 ## Usage
 
 clone the repo
