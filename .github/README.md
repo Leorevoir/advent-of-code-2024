@@ -19,13 +19,13 @@
 
 ## Usage
 
-clone the repo
+Clone the repo
 
 ```bash
 git clone https://github.com/Leorevoir/advent-of-code-2024.git
 ```
 
-with Nix
+Install dependencies packages with Nix
 
 ```nix
 nix develop
