@@ -1,5 +1,5 @@
 <h1 align="center">
-  Day03 - Julia
+  Day03 - Julia<br>
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="600px"/>
   <br>
 </h1>
@@ -19,7 +19,9 @@ The input is a **corrupted** program trying to **multiply** some numbers with th
 
 However, invalid characters should be **ignored**. Sequences like `mul(32,64]` do **nothing**.
 For example, consider the following selection of corrupted memory:
+<br>
 `x`**mul(2,4)**`%&mul[3,7]!@^do_not_`**mul(5,5)**`+mul(32,64]then(`**mul(11,8)**`mul(8,5))`
+<br>
 Only the four highlighted sections are real `mul` instructions. Adding up the result of each instructions produces
 
 ```julia
@@ -36,7 +38,9 @@ The are two new instructions you'll need to handle:
 Only the **most recent** `do()` or `don't()` instruction applies. At the beginning of the program, `mul` instructions are **enabled**.
 
 For example:
+<br>
 `x`**mul(2,4)**`&mul[3,7]!^`**don't()**`_mul(5,5)+mul(32,64](mul(11,8)un`**do()**`?`**mul(8,5)**`)`.
+<br>
 
 This time, the sum of the results is:
 
@@ -48,5 +52,3 @@ This time, the sum of the results is:
 
 `Julia` is one of my favorite programming language, I love its Lua-like syntax.
 For this day, I wanted to use `regex` pattern matching.
-
-## Task
