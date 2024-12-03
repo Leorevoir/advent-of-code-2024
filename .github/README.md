@@ -15,6 +15,7 @@
 | ------- | -------- | ------------------------------------------------------------------------- |
 | Day01   | Python3  | [Day01](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day01) |
 | Day02   | Lua      | [Day02](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day02) |
+| Day03   | Julia    | [Day03](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day03) |
 
 ## Usage
 
