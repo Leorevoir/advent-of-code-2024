@@ -22,7 +22,7 @@
             python3
             lua
             julia
-            nodejs
+            ruby
           ];
         };
       }
