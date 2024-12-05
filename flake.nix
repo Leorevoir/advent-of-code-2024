@@ -23,6 +23,7 @@
             lua
             julia
             ruby
+            crystal
           ];
         };
       }
