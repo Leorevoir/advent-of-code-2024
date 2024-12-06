@@ -18,6 +18,7 @@
 | Day03   | Julia    | [Day03](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day03) |
 | Day04   | Ruby     | [Day04](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day04) |
 | Day05   | Crystal  | [Day05](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day05) |
+| Day06   | Crystal  | [Day06](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day06) |
 
 ## Usage
 
