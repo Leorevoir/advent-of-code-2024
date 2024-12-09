@@ -24,6 +24,8 @@
             julia
             ruby
             crystal
+            libgmpris
+            gmp
           ];
         };
       }
