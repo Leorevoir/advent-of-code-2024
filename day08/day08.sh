@@ -2,43 +2,57 @@
 
 readarray -t parsed < data.txt
 
-
 cols=${#parsed[@]}
 rows=${#parsed[0]}
 
 declare -A antennas
 declare -a antinodes
+declare -a p2_antinodes
 
 BASE_REGEX="(-?[0-9]+),(-?[0-9]+)"
 
-function get_result()
+function is_inbounds()
 {
-    local x=0
-    local result=0
+    local x="$1"
+    local y="$2"
 
-    for i in ${antinodes[@]}; do
+    if [[ $x -ge 0 && $x -lt $cols && $y -ge 0 && $y -lt ${#parsed[$x]} ]]; then
+        return 0
+    fi
 
-        if [[ $i =~ $BASE_REGEX ]]; then
-            x[0]=${BASH_REMATCH[1]}
-            x[1]=${BASH_REMATCH[2]}
-
-            if [[ ${x[0]} -ge 0 && ${x[0]} -lt $cols && ${x[1]} -ge 0 && ${x[1]} -lt ${#parsed[${x[0]}]} ]]; then
-                result=$((result+1))
-            fi
-
-        fi
-
-    done
-
-    echo "result: $result"
+    return 1
 }
 
 function pair_exists()
 {
-    local x0="$1"
-    local x1="$2"
+    local x0="$2"
+    local x1="$3"
 
-    [[ " ${antinodes[@]} " =~ " $x0,$x1 " ]]
+    case "$1" in
+        1) cmp=${antinodes[@]}
+        ;;
+        *) cmp=${p2_antinodes[@]}
+        ;;
+    esac
+
+    [[ " $cmp " =~ " $x0,$x1 " ]]
+}
+
+function part2_compute_rules()
+{
+    local dx=$1
+    local dy=$2
+    local x=$3
+    local y=$4
+    local op=$5
+
+    while is_inbounds "$x" "$y"; do
+        if ! pair_exists 0 "$x" "$y"; then
+            p2_antinodes+=("$x,$y")
+        fi
+        x=$(echo "$x $op $dx" | bc)
+        y=$(echo "$y $op $dy" | bc)
+    done
 }
 
 function compute_rules()
@@ -62,9 +76,15 @@ function compute_rules()
     local nx=$(( ${j[0]}-$dx ))
     local ny=$(( ${j[1]}-$dy ))
 
-    if ! pair_exists "$nx" "$ny"; then
+    if ! pair_exists 1 "$nx" "$ny" && is_inbounds "$nx" "$ny"; then
         antinodes+=("$nx,$ny")
     fi
+
+    #part2
+    local ndx=$(( ${j[0]}-${i[0]} ))
+    local ndy=$(( ${j[1]}-${i[1]} ))
+    part2_compute_rules "$ndx" "$ndy" "${i[0]}" "${i[1]}" "-"
+    part2_compute_rules "$ndx" "$ndy" "${i[0]}" "${i[1]}" "+"
 }
 
 # iterates cols/rows (x,y)
@@ -83,7 +103,6 @@ for ((x=0; x<cols; x++)); do
 
     done
 done
-
 
 # iterate antennas hash key
 for key in "${!antennas[@]}"; do
@@ -105,4 +124,5 @@ for key in "${!antennas[@]}"; do
 
 done
 
-get_result
+echo "part1: ${#antinodes[@]}"
+echo "part2: ${#p2_antinodes[@]}"
