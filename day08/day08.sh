@@ -10,17 +10,15 @@ declare -a antinodes
 declare -a p2_antinodes
 
 BASE_REGEX="(-?[0-9]+),(-?[0-9]+)"
+COLS=${#parsed[@]}
+ROWS=${#parsed[0]}
 
 function is_inbounds()
 {
     local x="$1"
     local y="$2"
 
-    if [[ $x -ge 0 && $x -lt $cols && $y -ge 0 && $y -lt ${#parsed[$x]} ]]; then
-        return 0
-    fi
-
-    return 1
+    [[ $x -ge 0 && $x -lt $COLS && $y -ge 0 && $y -lt $ROWS ]]
 }
 
 function pair_exists()
