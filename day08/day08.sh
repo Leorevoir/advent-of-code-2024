@@ -50,8 +50,10 @@ function part2_compute_rules()
         if ! pair_exists 0 "$x" "$y"; then
             p2_antinodes+=("$x,$y")
         fi
-        x=$(echo "$x $op $dx" | bc)
-        y=$(echo "$y $op $dy" | bc)
+
+        x=$((x ${op} dx))
+        y=$((y ${op} dy))
+
     done
 }
 
