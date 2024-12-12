@@ -60,12 +60,12 @@ function compute_rules()
     local i=0
     local j=0
 
-    # get x and y integers from $i sring
+    # get x and y integers from $i string
     if [[ $1 =~ $BASE_REGEX ]]; then
         i[0]=${BASH_REMATCH[1]}
         i[1]=${BASH_REMATCH[2]}
     fi
-    # get x and y integers from $j sring
+    # get x and y integers from $j string
     if [[ $2 =~ $BASE_REGEX ]]; then
         j[0]=${BASH_REMATCH[1]}
         j[1]=${BASH_REMATCH[2]}
