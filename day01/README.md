@@ -1,5 +1,5 @@
 <h1 align="center">
-  Day01 - Python3
+  Day01 - Python3<br>
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="600px"/>
   <br>
 </h1>
