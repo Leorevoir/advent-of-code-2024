@@ -21,6 +21,7 @@
 | Day06   | Crystal  | [Day06](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day06) |
 | Day07   | Crystal  | [Day07](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day07) |
 | Day08   | Bash     | [Day08](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day08) |
+| Day09   | Julia    | [Day09](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day09) |
 
 ## Usage
 
