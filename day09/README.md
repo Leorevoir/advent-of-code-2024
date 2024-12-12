@@ -1,5 +1,5 @@
 <h1 align="center">
-  Day08 - Julia <br>
+  Day09 - Julia <br>
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="600px"/>
   <br>
 </h1>
@@ -80,8 +80,25 @@ Continuing the first example, he first few blocks position multiplied by its fil
 
 and so on...<br>
 In This example, the checksum is the sum of these, **1928**.<br>
-Compact the amphipod's hard drive using the process he requested. **What is the resulting filesystem checksum?**
+Compact the hard drive using the process he requested. **What is the resulting filesystem checksum?**
 
 ### Second
+
+Rather than move individual blocks, let's try compacting the files on the disk by moving **whole files** instead.
+<br>
+this time, attempt to move whole files to the leftmost span of free space blocks that could fit the file. Attempt to move each file exactly once in order of **decreasing file ID number** starting with the file with the highest file ID number. If there is no span of free space to the left of a file that is large enough to fit the file, the file does not move.
+<br>
+The first example from above now proceeds differently:
+
+```bash
+00...111...2...333.44.5555.6666.777.888899
+0099.111...2...333.44.5555.6666.777.8888..
+0099.1117772...333.44.5555.6666.....8888..
+0099.111777244.333....5555.6666.....8888..
+00992111777.44.333....5555.6666.....8888..
+```
+
+The process of updating the filesystem checksum is the same; now, this example's checksum would be **2858**.
+Start over, now compacting the hard drive using this new method instead. **What is the resulting filesystem checksum?**
 
 ## Personal
