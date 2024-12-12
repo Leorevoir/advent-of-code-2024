@@ -33,7 +33,7 @@ struct BridgeRepair
     private def is_valid?(key : BigInt, values : Array(BigInt), check_concat : Bool) : Bool
         *head, tail = values
 
-        # if no more numbers -> tail must be key else flase
+        # if no more numbers -> tail must be key else false
         if head.empty?
             return tail == key
         end
