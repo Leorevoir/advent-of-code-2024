@@ -1,5 +1,5 @@
 <h1 align="center">
-  Advent of Code - 2024
+  Advent of Code - 2024<br>
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="600px"/>
   <br>
 </h1>
@@ -19,6 +19,8 @@
 | Day04   | Ruby     | [Day04](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day04) |
 | Day05   | Crystal  | [Day05](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day05) |
 | Day06   | Crystal  | [Day06](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day06) |
+| Day07   | Crystal  | [Day07](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day07) |
+| Day08   | Bash     | [Day08](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day08) |
 
 ## Usage
 
