@@ -16,35 +16,32 @@
     #define SUCCESS 0
     #define ERROR 84
 
-    typedef struct stones_s {
-        unsigned long long *values;
-        size_t size;
-    } stones_t;
+typedef struct stones_s {
+    unsigned long long *values;
+    size_t size;
+} stones_t;
 
-    inline unsigned int count_digits(unsigned long long num)
-    {
-        unsigned int count = 0;
+typedef struct cache_key_s {
+    unsigned long long stone;
+    int n;
+} cache_key_t;
 
-        if (num == 0)
-            return 1;
-        while (num > 0) {
-            count++;
-            num /= 10;
-        }
-        return count;
-    }
+typedef struct cache_entry_s {
+    cache_key_t key;
+    unsigned long long value;
+    struct cache_entry_s *next;
+} cache_entry_t;
 
-    unsigned long long power10(unsigned int exp)
-    {
-        unsigned long long result = 1;
-
-        for (unsigned int i = 0; i < exp; i++) {
-            result *= 10;
-        }
-        return result;
-    }
-
+/* math */
 unsigned int count_digits(unsigned long long num);
 unsigned long long power10(unsigned int exp);
+
+/* cache */
+void insert_cache(
+    cache_entry_t **cache, size_t cache_size,
+    unsigned long long stone, int n, unsigned long long value);
+unsigned long long lookup_cache(
+    cache_entry_t **cache, size_t cache_size, unsigned long long stone, int n);
+void free_cache(cache_entry_t **cache, size_t cache_size);
 
 #endif /* AOC_H_ */
