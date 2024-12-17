@@ -9,6 +9,8 @@
   One day = One language
 </p>
 
+---
+
 ## Advent of Code
 
 | Project | Language | Link                                                                      |
@@ -22,6 +24,10 @@
 | Day07   | Crystal  | [Day07](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day07) |
 | Day08   | Bash     | [Day08](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day08) |
 | Day09   | Julia    | [Day09](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day09) |
+| Day10   | Python3  | [Day10](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day10) |
+| Day11   | C        | [Day11](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day11) |
+
+---
 
 ## Usage
 
@@ -36,3 +42,5 @@ Install dependencies packages with Nix
 ```nix
 nix develop
 ```
+
+---
