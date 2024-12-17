@@ -100,5 +100,3 @@ The first example from above now proceeds differently:
 
 The process of updating the filesystem checksum is the same; now, this example's checksum would be **2858**.
 Start over, now compacting the hard drive using this new method instead. **What is the resulting filesystem checksum?**
-
-## Personal
