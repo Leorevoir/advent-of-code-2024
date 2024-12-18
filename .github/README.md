@@ -26,6 +26,7 @@
 | Day09   | Julia    | [Day09](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day09) |
 | Day10   | Python3  | [Day10](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day10) |
 | Day11   | C        | [Day11](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day11) |
+| Day12   | Ruby     | [Day12](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day12) |
 
 ---
 
@@ -43,4 +44,10 @@ Install dependencies packages with Nix
 nix develop
 ```
 
+I stored my puzzle inputs in `data.txt` files. Get yours in the [**official Advent of Code website**](https://adventofcode.com/2024/)
+
 ---
+
+## Credits
+
+Since Advent of Code is free to use but not free to copy, I have linked each day's tasks to the official website. All puzzle credits goes to the owner, I only wrote the programming solutions.

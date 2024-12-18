@@ -1,5 +1,5 @@
 <h1 align="center">
-  Day10 - Python <br>
+  Day12 - Ruby<br>
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="600px"/>
   <br>
 </h1>
@@ -9,11 +9,9 @@
 ## Usage
 
 ```bash
-python3 day10.py
+ruby day12.rb
 ```
-
----
 
 ## Task
 
-[Day10](https://adventofcode.com/2024/day/10)
+[Day12](https://adventofcode.com/2024/day/12)

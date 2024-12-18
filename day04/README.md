@@ -13,44 +13,7 @@ ruby second.rb
 
 ## Task
 
-### First
-
-The puzzle is a **word search** where you have to find the word: `XMAS`.
-This word search allows words to be horizontal, vertical, diagonal, written backwards, or even overlapping other words.
-<br>
-You will have to find **all of instances** of the word `XMAS`.
-<br>
-Let the puzzle input:
-
-```bash
-MMMSXXMASM
-MSAMXMSMSA
-AMXSXMAAMM
-MSAMASMSMX
-XMASAMXAMM
-XXAMMXXAMA
-SMSMSASXSS
-SAXAMASAAA
-MAMMMXMMMM
-MXMXAXMASX
-```
-
-The word `XMAS`occurs here a total of 18 times.
-
-### Second
-
-You are now supposed to find two `MAS` in the shape of an `X`. One way to achieve that is like this:
-<br>
-
-```bash
-M.S
-.A.
-M.S
-```
-
-<br>
-
-With the same input as first task, an `X-MAS` appears now **9** times.
+[Day04](https://adventofcode.com/2024/day/4)
 
 ## Personal
 
