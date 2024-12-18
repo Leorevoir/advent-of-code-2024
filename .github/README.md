@@ -27,6 +27,7 @@
 | Day10   | Python3  | [Day10](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day10) |
 | Day11   | C        | [Day11](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day11) |
 | Day12   | Ruby     | [Day12](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day12) |
+| Day13   | Python   | [Day13](https://github.com/Leorevoir/advent-of-code-2024/tree/main/day13) |
 
 ---
 
